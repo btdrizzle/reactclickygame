@@ -9,22 +9,28 @@ class Pictures extends Component {
         super(props);
 
         this.state = {
-            pictureList : pictureList
+            pictureList : pictureList,
+            count : 0
         }
     }
-
-    checkIfChecked = () => {
-
+    setStateReset = () => {
+        this.refs.child.resetState();
     }
     shuffleCards = () => {
-        const newList = _.shuffle(this.state.pictureList);
-        this.setState({pictureList : newList});
+        this.setState({count : this.state.count + 1});
+        if(this.state.count === 15) {
+            this.props.winGame();
+        }else {
+            const newList = _.shuffle(this.state.pictureList);
+            this.setState({pictureList : newList});
+        }
     }
     render() {
         return (
             <div id="allPictures" className="col-8 mx-auto">
             {this.state.pictureList.map(picture => (
                 <PictureCard 
+                ref="child"
                 id={picture.id}
                 key={picture.id}
                 src={picture.src}

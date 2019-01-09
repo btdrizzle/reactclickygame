@@ -11,6 +11,9 @@ class PictureCard extends Component {
             clicked : false
         }
     }
+    resetState = () => {
+        this.setState({clicked : false});
+    }
 
     makeClicked = () => {
         if(this.state.clicked === true) {

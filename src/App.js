@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
-import Instructions from "./components/Instructions";
 import Pictures from "./components/Pictures";
 
 class App extends Component {

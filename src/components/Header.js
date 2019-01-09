@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Counter from "./Counter";
+import Instructions from "./Instructions"
 
 function Header(props) {
     return (
@@ -11,6 +12,7 @@ function Header(props) {
             wins={props.wins}
             winsinarow={props.winsinarow}
             />
+            <Instructions />
             </div>
         </header>
     )

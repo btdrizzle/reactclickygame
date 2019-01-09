@@ -15,6 +15,7 @@ class Pictures extends Component {
     }
     setStateReset = () => {
         this.refs.child.resetState();
+        console.log("fire");
     }
     shuffleCards = () => {
         this.setState({count : this.state.count + 1});

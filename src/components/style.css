@@ -1,4 +1,16 @@
 
+h1 {
+    font-family: 'Righteous', cursive;
+}
+p {
+    font-family: 'Righteous', cursive;
+}
+#header {
+    width: 100%;
+    box-shadow: 0 5px 5px black;
+    margin-bottom: 10px;
+    background-color: #DA9F13;
+}
 .card {
     width: 15%;
     height: auto;
@@ -6,6 +18,7 @@
     box-shadow: 5px 5px 5px white;
     transform: scale(1);
 }
+
 .card:active {
     transform: scale(0.97);
     transition: .2s;
@@ -33,4 +46,5 @@
 }
 .wrapper {
     background-color: #6C757D;
+    background-image: url("./always-grey.png")
 }

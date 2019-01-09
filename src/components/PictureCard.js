@@ -12,14 +12,18 @@ class PictureCard extends Component {
         }
     }
     resetState = () => {
+        console.log("fire baby");
+        console.log(this.state.clicked);
         this.setState({clicked : false});
+        console.log(this.state.clicked)
     }
 
     makeClicked = () => {
         if(this.state.clicked === true) {
             this.props.loseGame()
         }else{
-            this.setState({ clicked : true });
+            this.setState({ clicked : true })
+            console.log(this.state.clicked);
             this.props.shuffleCards();
         }
     }

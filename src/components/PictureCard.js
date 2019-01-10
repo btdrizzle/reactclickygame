@@ -11,19 +11,19 @@ class PictureCard extends Component {
             clicked : false
         }
     }
-    resetState = () => {
-        console.log("fire baby");
-        console.log(this.state.clicked);
-        this.setState({clicked : false});
-        console.log(this.state.clicked)
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if(this.props.resetGame !== prevProps.resetGame) {
+            console.log("fire");
+            this.setState({clicked: false})
+        }
     }
 
     makeClicked = () => {
         if(this.state.clicked === true) {
-            this.props.loseGame()
+            this.props.lostGame()
         }else{
             this.setState({ clicked : true })
-            console.log(this.state.clicked);
             this.props.shuffleCards();
         }
     }

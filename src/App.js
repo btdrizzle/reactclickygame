@@ -12,18 +12,14 @@ class App extends Component {
         winsInARow: 0,
     }
 }
-  startOver = () => {
-    this.refs.pictures.setStateReset();
-  }
+  
   winGame = () => {
     this.setState({wins : this.state.wins + 1});
     this.setState({winsInARow : this.state.winsInARow + 1});
-    this.startOver();
     alert("You won!!");
   }
   loseGame = () => {
     this.setState({winsInARow : 0});
-    this.startOver();
     alert("You lost!");
   }
   
@@ -35,7 +31,6 @@ class App extends Component {
       winsinarow={this.state.winsInARow}
       />
       <Pictures 
-      ref="pictures"
       loseGame={this.loseGame}
       winGame={this.winGame}
       />

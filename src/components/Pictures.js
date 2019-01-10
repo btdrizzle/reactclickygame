@@ -10,35 +10,40 @@ class Pictures extends Component {
 
         this.state = {
             pictureList : pictureList,
-            count : 0
+            count : 0,
+            resetGame: false,
         }
     }
-    setStateReset = () => {
-        this.refs.child.resetState();
-        console.log("fire");
+    resetGame = () => {
+        this.setState({resetGame: !this.state.resetGame})
+    }
+    lostGame = () => {
+        this.resetGame();
+        this.props.loseGame();
     }
     shuffleCards = () => {
         this.setState({count : this.state.count + 1});
         if(this.state.count === 15) {
+            this.resetGame();
             this.props.winGame();
         }else {
             const newList = _.shuffle(this.state.pictureList);
             this.setState({pictureList : newList});
         }
     }
+
     render() {
         return (
             <div id="allPictures" className="col-8 mx-auto">
             {this.state.pictureList.map(picture => (
                 <PictureCard 
-                ref="child"
                 id={picture.id}
                 key={picture.id}
                 src={picture.src}
                 title={picture.title}
                 shuffleCards={this.shuffleCards}
-                loseGame={this.props.loseGame}
-
+                lostGame={this.lostGame}
+                resetGame={this.state.resetGame}
                 />
             ))}
             </div>

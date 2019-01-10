@@ -34,31 +34,31 @@
         "title": "House Lannister"
     },    {
         "id": 9,
-        "src": "%PUBLICURL%/images/Martell.png",
+        "src": "/%PUBLICURL%/images/Martell.png",
         "title": "House Martell"
     },    {
         "id": 10,
-        "src": "%PUBLICURL%/images/Mormont.png",
+        "src": "images/Mormont.png",
         "title": "House Mormont"
     },    {
         "id": 11,
-        "src": "%PUBLICURL%/images/stark.png",
+        "src": "images/stark.png",
         "title": "House Stark"
     },    {
         "id": 12,
-        "src": "%PUBLICURL%/images/Targaryen.png",
+        "src": "images/Targaryen.png",
         "title": "House Targaryen"
     },    {
         "id": 13,
-        "src": "%PUBLICURL%/images/Tarth.png",
+        "src": "images/Tarth.png",
         "title": "House Tarth"
     },    {
         "id": 14,
-        "src": "%PUBLICURL%/images/Tully.png",
+        "src": "images/Tully.png",
         "title": "House Tully"
     },    {
         "id": 15,
-        "src": "%PUBLICURL%/images/Tyrell.png",
+        "src": "images/Tyrell.png",
         "title": "House Tyrell"
     }
 ]

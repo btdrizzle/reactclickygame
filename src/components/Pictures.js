@@ -23,7 +23,7 @@ class Pictures extends Component {
     }
     shuffleCards = () => {
         this.setState({count : this.state.count + 1});
-        if(this.state.count === 15) {
+        if(this.state.count > 14) {
             this.resetGame();
             this.props.winGame();
         }else {

@@ -6,35 +6,35 @@
     },
     {
         "id": 2,
-        "src": "%PUBLICURL%/images/Baelish.png",
+        "src": "images/Baelish.png",
         "title": "House Baelish"
     },    {
         "id": 3,
-        "src": "%PUBLICURL%/images/Baratheon.png",
+        "src": "images/Baratheon.png",
         "title": "House Baratheon"
     },    {
         "id": 4,
-        "src": "%PUBLICURL%/images/Bolton.png",
+        "src": "images/Bolton.png",
         "title": "House Bolton"
     },    {
         "id": 5,
-        "src": "%PUBLICURL%/images/Clegane.png",
+        "src": "images/Clegane.png",
         "title": "House Clegane"
     },    {
         "id": 6,
-        "src": "%PUBLICURL%/images/Dondarrion.png",
+        "src": "images/Dondarrion.png",
         "title": "House Dondarrion"
     },    {
         "id": 7,
-        "src": "%PUBLICURL%/images/Greyjoy.png",
+        "src": "images/Greyjoy.png",
         "title": "House Greyjoy"
     },    {
         "id": 8,
-        "src": "%PUBLICURL%/images/Lannister.png",
+        "src": "images/Lannister.png",
         "title": "House Lannister"
     },    {
         "id": 9,
-        "src": "/%PUBLICURL%/images/Martell.png",
+        "src": "images/Martell.png",
         "title": "House Martell"
     },    {
         "id": 10,
